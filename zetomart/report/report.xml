@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="report_supplier_xlsx" model="ir.actions.report">
+    <field name="name">Supplier Excell</field>
+    <field name="model">zetomart.supplier</field>
+    <field name="report_type">xlsx</field>
+    <field name="report_name">zetomart.report_supplier_xlsx</field>
+    <field name="report_file">zetomart.report_supplier_xlsx</field>
+    <field name="binding_model_id" ref="model_zetomart_supplier"/>
+    <field name="binding_type">report</field>
+</record>
+
+<record id="report_penjualan_xlsx" model="ir.actions.report">
+    <field name="name">Penjualan Excell</field>
+    <field name="model">zetomart.penjualan</field>
+    <field name="report_type">xlsx</field>
+    <field name="report_name">zetomart.report_penjualan_xlsx</field>
+    <field name="report_file">zetomart.report_penjualan_xlsx</field>
+    <field name="binding_model_id" ref="model_zetomart_penjualan"/>
+    <field name="binding_type">report</field>
+</record>
+
+<record id="report_barang_xlsx" model="ir.actions.report">
+    <field name="name">Barang Excell</field>
+    <field name="model">zetomart.barang</field>
+    <field name="report_type">xlsx</field>
+    <field name="report_name">zetomart.report_barang_xlsx</field>
+    <field name="report_file">zetomart.report_barang_xlsx</field>
+    <field name="binding_model_id" ref="model_zetomart_barang"/>
+    <field name="binding_type">report</field>
+</record>
+
+<!-- PDF REPORT -->
+<record id="report_penjualan_pdf" model="ir.actions.report">
+    <field name="name">Print Faktur</field>
+    <field name="model">zetomart.penjualan</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">zetomart.report_penjualan_pdf</field>
+    <field name="report_file">zetomart.report_penjualan_pdf</field>
+    <field name="binding_model_id" ref="model_zetomart_penjualan"/>
+    <field name="binding_type">report</field>
+</record>
+
+<record id="report_barang_pdf" model="ir.actions.report">
+    <field name="name">Barang pdf</field>
+    <field name="model">zetomart.barang</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">zetomart.report_barang_pdf</field>
+    <field name="report_file">zetomart.report_barang_pdf</field>
+    <field name="binding_model_id" ref="model_zetomart_barang"/>
+    <field name="binding_type">report</field>
+</record>
+
+</odoo>

@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_zetomart_kelompokbarang,accsess.zetomart.kelompokbarang,model_zetomart_kelompokbarang,,1,1,1,1
+access_zetomart_barang,accsess.zetomart.barang,model_zetomart_barang,,1,1,1,1
+access_zetomart_person,accsess.zetomart.person,model_zetomart_person,,1,1,1,1
+access_zetomart_kasir,accsess.zetomart.kasir,model_zetomart_kasir,,1,1,1,1
+access_zetomart_cleaningservice,accsess.zetomart.cleaningservice,model_zetomart_cleaningservice,,1,1,1,1
+access_zetomart_supplier,accsess.zetomart.supplier,model_zetomart_supplier,,1,1,1,1
+access_zetomart_penjualan,accsess.zetomart.penjualan,model_zetomart_penjualan,,1,1,1,1
+access_zetomart_detailpenjualan,accsess.zetomart.detailpenjualan,model_zetomart_detailpenjualan,,1,1,1,1
+access_zetomart_barangdatang,accsess.zetomart.barangdatang,model_zetomart_barangdatang,,1,1,1,1
+access_zetomart_supplierbaru,accsess.zetomart.supplierbaru,model_zetomart_supplierbaru,,1,1,1,1

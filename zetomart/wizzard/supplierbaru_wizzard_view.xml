@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- zetomart.barangdatang form view -->
+    <record id="supplier_baru_view_form_wizzard" model="ir.ui.view">
+        <field name="name">Supplier Baru</field>
+        <field name="model">zetomart.supplierbaru</field>
+        <field name="arch" type="xml">
+            <form string="Form Supplier Baru">
+                <group name="supplier" string="Supplier">
+                    <field name="supplier_id"/>
+                    <field name="alamat"/>
+                    <field name="no_telp"/>
+                </group>
+                <group name="barang" string="Barang">
+                    <field name="barang_id"/>
+                </group>
+                <footer>
+                    <button name="button_supplier_baru" type="object" string="Input Supplier" class="btn btn-warning"/>
+                    <button string="Cancel" special="cancel" class="btn btn-danger"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="supplier_baru_action_wizzard" model="ir.actions.act_window">
+        <field name="name">Supplier Baru</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">zetomart.supplierbaru</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="supplier_baru_view_form_wizzard"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- <menuitem
+        id="menu_supplier_baru_action_wizzard"
+        name="Input Supplier"
+        parent="zetomart_supplier_menu_act"
+        action="supplier_baru_action_wizzard"
+        sequence="30"/> -->
+
+    <menuitem
+        id="menu_supplier_baru_action_wizzard"
+        name="Input Supplier"
+        parent="zetomart_menu_root"
+        action="supplier_baru_action_wizzard"
+        sequence="52"/>
+</odoo>
